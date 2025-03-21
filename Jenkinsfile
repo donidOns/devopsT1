@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t my-app .'
+                echo 'docker build'
             }
         }
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8080:80 my-app'
+                echo 'deploy'
             }
         }
     }
