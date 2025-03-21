@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/donidOns/devopsT1.git'
+                git 'https://github.com/donidOns/devopst1.git'
             }
         }
         stage('Build Docker Image') {
